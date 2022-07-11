@@ -1,4 +1,12 @@
-var myApi = "fd0962dc486d115b23abc1e5d7586b6b"
+var myApi = "4637c879cb34b889eb8beec14aa12735"
+// var currentConditions = fetch url for specific city current conditions.
+// var fiveDay = fetch url for specific city five day forecast.
+// var uvIndex = fetch url for specific city UV Index info.
+// var previouslySearched = JSON.parse(localStorage.getItem("searchedList")) || [];
+//  Build the array of previously searched cities.
+
+
+
 
 fetch('https://api.openweathermap.org/data/3.0/onecall?lat={lat}&lon={lon}&exclude={part}&appid={API Key}')
     .then(response => response.json())
@@ -14,7 +22,7 @@ fetch('https://api.openweathermap.org/data/3.0/onecall?lat={lat}&lon={lon}&exclu
 // Render the reults to appropriate locations
 
 var cityInput = document.getElementById("selectedCity").value;
-var savedCitys = document.getElementById("savedSearch");
+var savedCities = document.getElementById("savedSearch");
 var searchButton = document.getElementById("saveBtn");
 
 function getCity() {
