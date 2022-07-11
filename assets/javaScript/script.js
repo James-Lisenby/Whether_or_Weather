@@ -21,16 +21,18 @@ fetch('https://api.openweathermap.org/data/3.0/onecall?lat={lat}&lon={lon}&exclu
 // Event listener for search function.
 // Render the reults to appropriate locations
 
-var cityInput = document.getElementById("selectedCity").value;
-var savedCities = document.getElementById("savedSearch");
-var searchButton = document.getElementById("saveBtn");
 
-function getCity() {
-
-
-}
+var savedCities = document.getElementById("savedSearch")
+var searchButton = document.getElementById("saveBtn")
 
 searchButton.addEventListener("click", getCity);
+
+function getCity() {
+    userInput = document.getElementById("selectedCity").value;
+    console.log(userInput);
+}
+
+
 
 // Presented with color depending on weather conditions, good, ok, suck.
     // Change Class depending on conditions.
