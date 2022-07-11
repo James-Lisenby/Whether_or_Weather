@@ -8,7 +8,7 @@ var myApi = "4637c879cb34b889eb8beec14aa12735"
 
 
 
-fetch('https://api.openweathermap.org/data/3.0/onecall?lat={lat}&lon={lon}&exclude={part}&appid={API Key}')
+fetch('https://api.openweathermap.org/data/3.0/onecall?lat={lat}&lon={lon}&exclude={part}&appid=4637c879cb34b889eb8beec14aa12735')
     .then(response => response.json())
     .then(data => console.log(data));
 // Base url for fetching weather.
@@ -22,16 +22,32 @@ fetch('https://api.openweathermap.org/data/3.0/onecall?lat={lat}&lon={lon}&exclu
 // Render the reults to appropriate locations
 
 
-var savedCities = document.getElementById("savedSearch")
+
 var searchButton = document.getElementById("saveBtn")
 
-searchButton.addEventListener("click", getCity);
+searchButton.addEventListener("click", getCity)
+searchButton.addEventListener("click", storeSearch)
+searchButton.addEventListener("click", addToList)
 
 function getCity() {
     userInput = document.getElementById("selectedCity").value;
     console.log(userInput);
 }
 
+function storeSearch() {
+    searchedCity = document.getElementById("selectedCity").value;
+    localStorage.setItem('searchedCity', JSON.stringify(searchedCity));
+}
+
+function addToList() {
+    var inputValue = document.getElementById("selectedCity").value,
+        listNode = document.getElementById('searchHistory'),
+        liNode = document.createElement("LI"),
+        txtNode = document.createTextNode(inputValue);
+    liNode.appendChild(txtNode);
+    listNode.appendChild(liNode);
+
+}
 
 
 // Presented with color depending on weather conditions, good, ok, suck.
