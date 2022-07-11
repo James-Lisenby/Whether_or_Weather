@@ -1,33 +1,74 @@
 body {
-    background-color: aquamarine;
     display: block;
+    justify-items: center;
+    background-color: darkolivegreen;
+    text-decoration-color: black;
+    text-align: center;
+    justify-content: center;
 }
 
 .hero {
     text-align: center;
     width: 100%;
-    background-color: darkgray;
+    height: 20%;
+    background-color: darkolivegreen;
+    display: flex;
 }
 
-#hero-body {
-    text-decoration-color: black;
+#mainBoxHousing {
+    display: flex;
+    align-items: flex-start;
 
 }
 
-.savedSearch {
+#savedSearch {
     width: 25%;
     height: 25%;
     padding: 5px;
     margin: 5px;
     border: 2px solid black;
+    background-color: cadetblue;
+    display: block;
+    text-align: left;
+
 }
 
-.display-1 {
-    width: 20px;
-    height: 100px;
+
+h4 {
+    background-color: cadetblue;
+}
+
+#saveBtn {
+    background-color: slategrey;
+}
+
+#selectedCity {
+    background-color: cadetblue;
+    height: 40px;
+    font-size: 15px;
+    text-decoration: black;
+}
+
+#mainDisplay {
+    width: 500px;
+    height: 250px;
+    background-color: cadetblue;
     padding: 1px;
-    margin: 1px;
+    margin: 5px;
+    border: 2px solid black;
+    justify-self: center;
+    align-self: center;
+}
+
+#display-1,
+#display-2,
+#display-3,
+#display-4,
+#display-5 {
+    width: 500px;
+    height: 250px;
+    padding: 1px;
+    margin: 5px;
     border: 1px solid black;
-
-
+    background-color: cadetblue;
 }
