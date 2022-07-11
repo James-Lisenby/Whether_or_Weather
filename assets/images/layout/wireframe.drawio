@@ -1,0 +1,40 @@
+<mxfile host="65bd71144e">
+    <diagram id="cZ38Y16mxJxJzDor6a1n" name="Page-1">
+        <mxGraphModel dx="1940" dy="833" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+            <root>
+                <mxCell id="0"/>
+                <mxCell id="1" parent="0"/>
+                <mxCell id="2" value="" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry y="160" width="850" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="3" value="Weather" style="text;strokeColor=none;fillColor=none;html=1;fontSize=24;fontStyle=1;verticalAlign=middle;align=center;" vertex="1" parent="1">
+                    <mxGeometry x="375" y="170" width="100" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="5" value="Saved cities already searched&lt;br&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry y="320" width="120" height="280" as="geometry"/>
+                </mxCell>
+                <mxCell id="6" value="search" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry y="240" width="120" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="7" value="" style="swimlane;startSize=0;" vertex="1" parent="1">
+                    <mxGeometry x="200" y="640" width="140" height="120" as="geometry"/>
+                </mxCell>
+                <mxCell id="8" value="" style="swimlane;startSize=0;" vertex="1" parent="1">
+                    <mxGeometry x="40" y="640" width="140" height="120" as="geometry"/>
+                </mxCell>
+                <mxCell id="12" value="" style="swimlane;startSize=0;" vertex="1" parent="1">
+                    <mxGeometry x="355" y="640" width="140" height="120" as="geometry"/>
+                </mxCell>
+                <mxCell id="13" value="" style="swimlane;startSize=0;" vertex="1" parent="1">
+                    <mxGeometry x="520" y="640" width="140" height="120" as="geometry"/>
+                </mxCell>
+                <mxCell id="15" value="" style="swimlane;startSize=0;" vertex="1" parent="1">
+                    <mxGeometry x="680" y="640" width="140" height="120" as="geometry"/>
+                </mxCell>
+                <mxCell id="17" value="Main Display for Currently selected city&lt;br&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="160" y="270" width="650" height="260" as="geometry"/>
+                </mxCell>
+            </root>
+        </mxGraphModel>
+    </diagram>
+</mxfile>
