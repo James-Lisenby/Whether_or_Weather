@@ -17,27 +17,29 @@ fetch('https://api.openweathermap.org/data/3.0/onecall?lat={lat}&lon={lon}&exclu
 // When I search a city, I get current and future weather (5 days) displayed to appropitate locations.
 // City name, the date, icon representation of weather conditions, temp, humidity, wind speed, and uv index.
 
-// Create function that uses user input to search for desired city.
-// Event listener for search function.
 // Render the reults to appropriate locations
 
 
 
 var searchButton = document.getElementById("saveBtn")
+// The main button that gets the ball rolling.
 
 searchButton.addEventListener("click", getCity)
 searchButton.addEventListener("click", storeSearch)
 searchButton.addEventListener("click", addToList)
+// Event listeners for all the main functions.
 
 function getCity() {
     userInput = document.getElementById("selectedCity").value;
     console.log(userInput);
 }
+// Takes user input. Will replace [city] in the URL
 
 function storeSearch() {
     searchedCity = document.getElementById("selectedCity").value;
     localStorage.setItem('searchedCity', JSON.stringify(searchedCity));
 }
+// Stores the searched city into local storage
 
 function addToList() {
     var inputValue = document.getElementById("selectedCity").value,
@@ -46,8 +48,14 @@ function addToList() {
         txtNode = document.createTextNode(inputValue);
     liNode.appendChild(txtNode);
     listNode.appendChild(liNode);
-
 }
+// Adds searched city into the Saved Search list.
+
+// Should be able to select previously selected city and retreive the information.
+    // store search to local storage.
+    // retrieve from local storage.
+
+
 
 
 // Presented with color depending on weather conditions, good, ok, suck.
@@ -61,9 +69,7 @@ function addToList() {
 
 
 
-// Should be able to select previously selected city and retreive the information.
-    // store search to local storage.
-    // retrieve from local storage.
+
 
 
 
