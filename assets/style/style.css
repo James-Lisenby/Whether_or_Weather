@@ -16,3 +16,10 @@ body {
     margin: 1em;
 
 }
+
+#mainCard {
+    position: absolute;
+    top: 100px;
+    left: 0px;
+
+}
