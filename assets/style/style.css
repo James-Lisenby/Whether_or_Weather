@@ -23,3 +23,15 @@ body {
     left: 0px;
 
 }
+
+#results {
+    padding: 5px;
+    margin: 5px;
+    width: 300px;
+    height: 300px;
+    border: 2px solid black;
+    display: flex;
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+}
